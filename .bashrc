@@ -3,6 +3,3 @@
 
 # Startup commands
 # cd /var/www/piton
-
-# Update PATH
-PATH=~/.composer/vendor/bin/:$PATH
