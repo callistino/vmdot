@@ -1,3 +1,4 @@
+
 # bash/zsh git prompt support
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
@@ -476,10 +477,9 @@ __git_ps1 ()
         if [ -n "${GIT_PS1_SHOWDIRTYSTATE-}" ] &&
            [ "$(git config --bool bash.showDirtyState)" != "false" ]
         then
-            git diff --no-ext-diff --quiet --exit-code || w="*"
-            if [ -n "$short_sha" ]; then
-                git diff-index --cached --quiet HEAD -- || i="+"
-            else
+            git diff --no-ext-diff --quiet || w="*"
+            git diff --no-ext-diff --cached --quiet || i="+"
+            if [ -z "$short_sha" ] && [ -z "$i" ]; then
                 i="#"
             fi
         fi
