@@ -3,7 +3,7 @@
 # P.C. Shyamshankar <sykora@lucentbeing.com>
 # Copied from http://github.com/sykora/etc/blob/master/zsh/functions/spectrum/
 
-declare -Ax FX FG BG
+declare -Ax FX FG BG BOLD GREEN BLUE RED RESET
 
 FX=(
     [reset]="\e[0m"
