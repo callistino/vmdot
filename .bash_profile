@@ -4,7 +4,7 @@ export PATH="$HOME/bin:$HOME/.composer/vendor/bin:$PATH";
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{functions,expectrum,path,bash_prompt,exports,aliases,extra,git-prompt}; do
+for file in ~/.{functions,expectrum.sh,path,bash_prompt,exports,aliases,extra,git-prompt.sh}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
