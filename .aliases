@@ -1,0 +1,15 @@
+# User specific aliases and functions
+alias piton='cd /var/www/piton'
+alias ngp='cd /var/www/ngp'
+alias etc='cd /var/www/etc'
+alias sherpa='cd /var/www/sherpa'
+alias cam='cd /var/www/cam'
+
+# Program alias
+alias pu='phpunit --color --bootstrap ./tests/bootstrap.php'
+alias pul='pu --log-tap /tmp/.piton-phpunit-test-log.tap'
+alias pur='phpunit --color --bootstrap tests/resources/bootstrap.php'
+alias purl='pur --log-tap /tmp/.piton-phpunit-test-log.tap'
+
+# Git alias
+alias git-reset='git add . && git stash && git stash drop'
