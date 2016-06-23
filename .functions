@@ -1,6 +1,5 @@
 # Import git functions
 GIT_PS1_SHOWDIRTYSTATE="true"
-GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS="true"
 
 # Removes old and merged branches with the given prefix
