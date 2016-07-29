@@ -1,1 +1,1 @@
-PS1="${BOLD}${GREEN}➜ ${BLUE}[\u@\h] \W\[\$(dirty)\]\$(__git_ps1) ${RESET}"
+PS1="\[$BOLD\]\[$GREEN\]➜ \[$BLUE\][\u@\h] \W\[\$(dirty)\]\$(__git_ps1) \[$RESET\]"

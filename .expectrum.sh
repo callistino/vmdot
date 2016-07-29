@@ -3,19 +3,20 @@
 # P.C. Shyamshankar <sykora@lucentbeing.com>
 # Copied from http://github.com/sykora/etc/blob/master/zsh/functions/spectrum/
 
-typeset -ax FX FG BG BOLD GREEN BLUE RED RESET
+typeset -ax FG BG 
+typeset -x BOLD GREEN BLUE RED RESET
 
-FX_RESET="\033[0m"
-FX_BOLD="\e[1m"
-FX_NO_BOLD="\e[21m"
-FX_ITALIC="\e[3m"
-FX_NO_ITALIC="\e[23m"
-FX_UNDERLINE="\e[4m"
-FX_NO_UNDERLINE="\e[24m"
-FX_BLINK="\e[5m"
-FX_NO_BLINK="\e[25m"
-FX_REVERSE="\e[7m"
-FX_NO_REVERSE="\e[27m"
+typeset -x FX_RESET="\033[0m"
+typeset -x FX_BOLD="\e[1m"
+typeset -x FX_NO_BOLD="\e[21m"
+typeset -x FX_ITALIC="\e[3m"
+typeset -x FX_NO_ITALIC="\e[23m"
+typeset -x FX_UNDERLINE="\e[4m"
+typeset -x FX_NO_UNDERLINE="\e[24m"
+typeset -x FX_BLINK="\e[5m"
+typeset -x FX_NO_BLINK="\e[25m"
+typeset -x FX_REVERSE="\e[7m"
+typeset -x FX_NO_REVERSE="\e[27m"
 
 
 for color in {000..255}; do
