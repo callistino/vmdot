@@ -6,6 +6,7 @@ export PATH="$HOME/bin:$HOME/.composer/vendor/bin:$PATH";
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{functions,expectrum.sh,path,bash_prompt,exports,aliases,extra,git-prompt.sh}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
+    echo -n `caller 0 | awk '{print $2}'`
 done;
 unset file;
 

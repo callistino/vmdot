@@ -19,7 +19,7 @@ typeset -x FX_REVERSE="\e[7m"
 typeset -x FX_NO_REVERSE="\e[27m"
 
 
-for color in {000..255}; do
+for color in {0..255}; do
     FG[$color]="\e[38;5;${color}m"
     BG[$color]="\e[48;5;${color}m"
 done
@@ -28,14 +28,14 @@ SPECTRUM_TEXT=${SPECTRUM_TEXT:-Arma virumque cano Troiae qui primus ab oris}
 
 # Show all 256 colors with color number
 function spectrum_ls() {
-  for code in {000..255}; do
+  for code in {0..255}; do
     printf "${FG[$code]}$code: $SPECTRUM_TEXT ${FX_RESET}\n"
   done
 }
 
 # Show all 256 colors where the background is set to specific color
 function spectrum_bls() {
-  for code in {000..255}; do
+  for code in {0..255}; do
     printf "${BG[$code]}$code: $SPECTRUM_TEXT ${FX_RESET}\n"
   done
 }
