@@ -5,6 +5,8 @@ alias etc='cd /var/www/etc'
 alias sherpa='cd /var/www/sherpa'
 alias cam='cd /var/www/cam'
 
+alias ll='ls -aFGhpl'
+
 # Program alias
 alias pu='phpunit --color --bootstrap ./tests/bootstrap.php'
 alias pul='pu --log-tap /tmp/.piton-phpunit-test-log.tap'

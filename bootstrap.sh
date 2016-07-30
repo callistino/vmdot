@@ -12,16 +12,17 @@ function doIt() {
         --exclude "README.md" \
         --exclude "LICENSE-MIT.txt" \
         -avh --no-perms . ~;
+    echo -n `caller 0 | awk '{print $2}'`
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
     doIt;
-    source ~/.bash_profile;
 else
     read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         doIt;
+        source ~/.bash_profile;
     fi;
 fi;
 unset doIt;
