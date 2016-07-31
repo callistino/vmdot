@@ -1,2 +1,5 @@
-# Add composer
-PATH=~/.composer/vendor/bin/:$PATH
+# Reset PATH
+PATH=$(getconf PATH)
+# Add `~/bin` to the `$PATH`
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.composer/vendor/bin:$PATH";
+

@@ -12,6 +12,7 @@ function doIt() {
         --exclude "README.md" \
         --exclude "LICENSE-MIT.txt" \
         -avh --no-perms . ~;
+    source ${HOME}/.bashrc
     echo -n `caller 0 | awk '{print $2}'`
 }
 
@@ -22,7 +23,6 @@ else
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         doIt;
-        source ~/.bash_profile;
     fi;
 fi;
 unset doIt;

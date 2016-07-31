@@ -1,10 +1,3 @@
-# User specific aliases and functions
-alias piton='cd /var/www/piton'
-alias ngp='cd /var/www/ngp'
-alias etc='cd /var/www/etc'
-alias sherpa='cd /var/www/sherpa'
-alias cam='cd /var/www/cam'
-
 alias ll='ls -aFGhpl'
 
 # Program alias
